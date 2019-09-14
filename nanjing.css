@@ -1,0 +1,390 @@
+.header{
+    background-image: url("nanjing1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:600px;
+    opacity: 0.8;
+    margin-top:0px;
+  
+}
+.header h1{
+    font-size: 100px;
+   
+    font-family: cursive;
+    position: relative;
+    top:60px;
+   text-align: center;
+   color: rgb(31, 128, 99);
+   text-shadow: 0px 3px red;
+   letter-spacing: 4px;
+    
+}
+.header h6{
+    font-size:30px;
+    color:white;
+    text-align: justify;
+    padding-left:600px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top:10px;
+    letter-spacing: 5px;
+    text-decoration-line: underline;
+    font-style: oblique;
+}
+.about ul{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    font-family: fantasy;
+    background-color: rgba(103, 105, 109, 0.89);
+   
+    border:3px solid rgb(114, 9, 9);
+    height:30px;
+}
+
+a{
+  
+    color:rgb(223, 223, 19);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+a:hover{
+    color:red;
+    font-size:20px;
+    background-color: antiquewhite;
+    box-shadow:0px 2px 3px 1px;
+    border:1px solid yellow;
+    text-decoration:none;
+    border-radius:20px;
+    transition: 0.5s;
+
+}
+nav{
+    display:flex;
+  flex-wrap: nowrap;
+
+}
+    
+span{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-top:10px;
+    padding-right:10px;
+   text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav img{
+    width: 400px;
+    height: auto;
+    vertical-align: middle;
+}
+footer{
+    background-color: black;
+    height:100px;
+}
+footer h4{
+    color:red;
+    font-size: 20px;
+    text-align: center;
+    font-family: fantasy;
+    padding-top:60px;
+    letter-spacing: 5px;
+}
+/* Nanjing1*/
+
+h2{
+    font-size: 50px;
+    font-style: oblique;
+    font-family: cursive;
+   padding-top:10px;
+   text-align: center;
+   color: rgb(2, 49, 35);
+   text-shadow: 0px 3px rgb(66, 129, 224);
+   text-decoration-line: underline overline;
+}
+header{
+    background-color:grey;
+    height:100px;
+   margin-top:0px;
+}
+.main-history,
+.main-history1
+{
+    display:flex;
+}
+h5{
+    text-align: center;
+    padding:10px 20px;
+    background-color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    border:1px gray solid;
+    box-shadow: 1px 4px rgb(8, 123, 177);
+    
+
+}
+h3{
+    color:rgba(26, 36, 168, 0.726);
+    font-size: 25px;
+    font-family: cursive;
+    text-align: center;
+    padding-top:20px;
+    
+    letter-spacing: 1px;
+
+    
+}
+/* nanjing2 map */
+
+.geography h3{
+
+    font-size: 50px;
+    font-style: oblique;
+    font-family: cursive;
+   padding-top:10px;
+   text-align: center;
+   color: rgb(3, 43, 31);
+   text-shadow: 0px 3px rgb(6, 92, 20);
+   text-decoration-line: underline overline;
+  
+}
+
+/* hier i also used media to change p font-size between 375-1024px  */
+@media only screen and (min-width:375px) and (max-width:1024px){
+    .information-map p{
+        font-size:1.5em;
+    }
+    .information-map img{
+        width:350px;
+        height:250px;
+    }
+}
+
+.map img{
+    width:600px;
+    height:500px;
+    text-align: center;
+}
+#Geo{
+
+    background-image:url("南京map.jpg");
+    font-family: monospace;
+    color:rgb(36, 85, 13);
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+
+/* tourist attraction */
+body{
+    width:100%;
+}
+.tourist h2{
+    font-size: 50px;
+    font-style: oblique;
+    font-family: cursive;
+   padding-top:10px;
+   text-align: center;
+   color: rgb(220, 243, 86);
+   text-shadow: 0px 3px rgb(136, 130, 135);
+   text-decoration-line: underline overline;
+}
+#tours{
+    background-color: rgb(14, 1, 1);
+    width:100%;
+    
+}
+.confuzius{
+    grid-area: confuzius;
+}
+.xixia{
+    grid-area:xixia;
+}
+.nanjingyan{
+    grid-area: nanjingyan;
+}
+.denghui{
+    grid-area:denghui;
+}
+.daqiao{
+    grid-area:daqiao;
+}
+
+/* hier i used media to change sizes for smaller screen*/
+
+@media only screen and (max-width:1034px){
+    p{font-size:12px;}
+    .attraction img{width:500px;
+        height:500px;}
+}
+
+.attraction{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "confuzius confuzius "
+                        ". xixia "
+                        "denghui denghui"
+                        ". nanjingyan "
+                        "daqiao daqiao ";
+}
+.attraction p{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.denghui p{
+    color:blue;
+}
+.daqiao p{
+    color:gray;
+}
+.nanjingyan p{
+    color:rgb(31, 128, 99);
+}
+.confuzius p{
+color:rgb(121, 10, 38);
+}
+.xixia p{
+color:blueviolet;
+}
+/* Dishes */
+
+.dishes{
+    background-image: url("dishes1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200px;
+}
+
+/* hier i used media to change sizes for smaller screen*/
+
+@media only screen and (max-width:1034px){
+    .info h3{font-size:0.5em;}
+    .dishes h2{font-size:80px;}
+}
+
+
+.info h3{
+    color: rgb(202, 190, 23);
+    border:2px solid green;
+    font-size:1.5em;
+   text-shadow: 0px 1px rgb(5, 90, 19);
+   background-color: gainsboro;
+}
+
+.dishes h2{
+    color:green;
+    padding-top:50px;
+    text-shadow: 1px 3px yellow;
+    letter-spacing: 2px;
+}
+
+
+.fotos-dishes img{
+    
+   padding-left:80px;
+   padding-top:20px;
+   padding-bottom:20px;
+}
+.baozi,
+.yazi,
+.tang,
+.huntun,
+.xia,
+.yuanxiao{
+    display: inline-block;
+    
+}
+tr td{
+    border:2px solid rgb(107, 165, 21);
+    text-align: center;
+    background:linear-gradient(10deg,rgb(233, 233, 187),rgb(214, 161, 46));
+    border-radius: 20px;
+    color:rgb(22, 155, 22);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+table td :first-child{
+    color: rgb(54, 52, 49);
+}
+td:hover {
+	background:linear-gradient(10deg,rgb(238, 235, 91),rgb(134, 163, 29));
+    color: #fff;
+    transition: 0.5s;
+    font-size: 15px;
+}
+/* nanjing 5 contact */
+
+.contact-us h2{
+    font-size: 80px;
+    font-style: oblique;
+    font-family: cursive;
+   padding-top:100px;
+   text-align: center;
+   color: rgb(77, 80, 63);
+   text-shadow: 0px 3px rgb(32, 197, 11);
+   text-decoration-line: underline overline;
+}
+main{
+    
+background-image:url("nanjingzifeng.jpg");
+
+background-size: cover;
+background-repeat:no-repeat;
+height:400px;
+}
+
+.contact,
+textarea{
+    margin-top: 10px;
+    padding-top:20px;
+    display:flex;
+   align-items: center;
+}
+
+textarea{
+    margin-left:5px;
+    margin-bottom:5px;
+}
+    
+.find-us img{
+    display:inline-flex;
+margin-left: 5px;
+padding-right:5px;
+
+    float:right;
+    justify-content: flex-end; /* position only with float-right? */
+    
+    
+    
+}
+
+
+.content{
+    background-image: url("nanjingzifeng.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   position: relative;
+    
+}
+button{
+    border:1px solid green;
+    border-radius: 20px;
+    background-color: rgb(214, 208, 123);
+    box-shadow: 1px 4px 3px 1px;
+}
+.contact li{
+    font-family: cursive;
+    color:gold;
+    font-size: 20px;
+    font-weight: 900;
+    list-style: none;
+    
+    
+    
+    
+}
