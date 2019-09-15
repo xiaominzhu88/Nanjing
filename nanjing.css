@@ -336,7 +336,8 @@ textarea {
   margin-bottom: 5px;
 }
 .find-us {
-  justify-content: flex-end; /* position only with float-right? */
+  flex-direction: row;
+  justify-content: flex-end;
   display: flex;
 }
 .find-us img {
